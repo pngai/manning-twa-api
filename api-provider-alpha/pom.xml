@@ -98,7 +98,15 @@
 			<artifactId>spring-tx</artifactId>
 		</dependency>
 
-		<!-- General -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-redis</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>redis.clients</groupId>
+			<artifactId>jedis</artifactId>
+		</dependency>
 		<dependency>
 		    <groupId>de.codecentric</groupId>
 		    <artifactId>chaos-monkey-spring-boot</artifactId>

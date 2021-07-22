@@ -16,6 +16,13 @@ services:
     environment:
       MYSQL_DATABASE: 'flights_catalog'
       MYSQL_ROOT_PASSWORD: 'muppet'
+  api-clusters-remote-cache:
+    container_name: api-clusters-remote-cache
+    image: redis:alpine
+    restart: always
+    ports:
+      - 5079:6379
+
       
   api-clusters:
     build: api-clusters/.
